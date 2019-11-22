@@ -16,3 +16,4 @@
 - Fahrer-Suche anlegen
 # Datenmodelierung
 - SQLite
+- CRUD Repository --> Server --> Controller
