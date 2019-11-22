@@ -14,3 +14,5 @@
 - Fahrten auflisten
 - Fahrten beitreten
 - Fahrer-Suche anlegen
+# Datenmodulierung
+- SQLite
