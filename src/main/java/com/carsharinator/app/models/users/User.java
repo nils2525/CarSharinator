@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.carsharinator.app.models;
+package com.carsharinator.app.models.users;
 
 import java.util.Date;
 
