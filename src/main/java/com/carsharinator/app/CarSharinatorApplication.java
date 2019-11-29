@@ -14,6 +14,7 @@ public class CarSharinatorApplication {
         
         @RequestMapping("/")
         String home() {
-            return "Tische mögen kaputt gehen! \n";
+            String _retString = "Tische mögen kaputt gehen! \n";
+            return _retString;
         }
 }
