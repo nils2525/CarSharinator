@@ -60,10 +60,6 @@ public class User {
         return _creationDate;
     }
 
-    public void setId(String _id) {
-        this._id = _id;
-    }
-
     public void setUsername(String _username) {
         this._username = _username;
     }
