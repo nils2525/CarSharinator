@@ -1,5 +1,6 @@
 package com.carsharinator.app;
 
+import com.carsharinator.app.models.users.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;

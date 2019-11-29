@@ -12,7 +12,7 @@ import java.util.Date;
  * @author dorian.doeding
  */
 public class User {
-    private String _id;
+    private int _id;
     // unique
     private String _username;
     
@@ -24,7 +24,7 @@ public class User {
     private boolean _isActive;
     private Date _creationDate;
 
-    public String getId() {
+    public int getId() {
         return _id;
     }
 
