@@ -1,12 +1,14 @@
 package com.carsharinator.app.models.users;
 
+import javax.persistence.Entity;
 import java.util.Date;
 
+@Entity
 public class User {
     private int _id;
     // unique
     private String _username;
-    
+
     private String _firstname;
     private String _lastname;
     private String _password;
