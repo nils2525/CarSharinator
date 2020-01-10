@@ -1,18 +1,23 @@
-package com.carsharinator.app.models.rides.rideheader;
+package com.carsharinator.app.models.rides;
+
+import java.util.Date;
 
 public class RideHeader {
-    private int number;
+    private int _number;
     // unique
-    private int userID;
+    private int _userID;
     
+    private String _username;
     private String _firstname;
     private String _lastname;
     private String _password;
     private String _gender;
     private String _email;
+    private Boolean _isActive;
+    private Date _creationDate;
 
     public int getId() {
-        return _id;
+        return _userID;
     }
 
     public String getUsername() {
