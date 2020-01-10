@@ -10,7 +10,7 @@ public class User {
     private String _firstname;
     private String _lastname;
     private String _password;
-    private String _gender;
+    private Gender _gender;
     private String _email;
     private boolean _isActive;
     private Date _creationDate;
@@ -36,7 +36,7 @@ public class User {
     }
 
     public String getGender() {
-        return _gender;
+        return _gender.toString();
     }
 
     public String getEmail() {
@@ -67,7 +67,7 @@ public class User {
         this._password = _password;
     }
 
-    public void setGender(String _gender) {
+    public void setGender(Gender _gender) {
         this._gender = _gender;
     }
 
