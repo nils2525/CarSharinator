@@ -1,21 +1,15 @@
-package com.carsharinator.app.models.users;
+package com.carsharinator.app.models.rides.rideheader;
 
-import javax.persistence.Entity;
-import java.util.Date;
-
-@Entity
-public class User {
-    private int _id;
+public class RideHeader {
+    private int number;
     // unique
-    private String _username;
-
+    private int userID;
+    
     private String _firstname;
     private String _lastname;
     private String _password;
-    private Gender _gender;
+    private String _gender;
     private String _email;
-    private boolean _isActive;
-    private Date _creationDate;
 
     public int getId() {
         return _id;
@@ -38,7 +32,7 @@ public class User {
     }
 
     public String getGender() {
-        return _gender.toString();
+        return _gender;
     }
 
     public String getEmail() {
@@ -69,7 +63,7 @@ public class User {
         this._password = _password;
     }
 
-    public void setGender(Gender _gender) {
+    public void setGender(String _gender) {
         this._gender = _gender;
     }
 
