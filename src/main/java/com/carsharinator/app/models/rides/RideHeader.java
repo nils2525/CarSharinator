@@ -1,8 +1,14 @@
 package com.carsharinator.app.models.rides;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity
 public class RideHeader {
+    @Id
+    @GeneratedValue
     private int _number;
     // unique
     private int _userID;
