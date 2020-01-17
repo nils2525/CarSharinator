@@ -2,18 +2,17 @@ package com.carsharinator.app.models.rides;
 
 import java.util.Date;
 
-public class RideLine {
+public class RideHeader {
 
-    private int _rideNumber;
-    private int _lineNo;
+    private int _number;
     // unique
-    private int _passengerID;
+    private int _driverID;
 
-    private String _passengerusername;
-    private String _passengerfirstname;
-    private String _passengerlastname;
-    private String _passengergender;
-    private String _passengeremail;
+    private String _driverusername;
+    private String _driverfirstname;
+    private String _driverlastname;
+    private String _drivergender;
+    private String _driveremail;
     private Date _creationDate;
     private Time _startTime;
     private Time _endTime;
@@ -21,27 +20,27 @@ public class RideLine {
     private String _destinationAddress;
 
     public int getId() {
-        return _passengerID;
+        return _driverID;
     }
 
-    public String getpassengername() {
-        return _passengerusername;
+    public String getdrivername() {
+        return _driverusername;
     }
 
-    public String getpassengerFirstname() {
-        return _passengerfirstname;
+    public String getdriverFirstname() {
+        return _driverfirstname;
     }
 
-    public String getpassengerLastname() {
-        return _passengerlastname;
+    public String getdriverLastname() {
+        return _driverlastname;
     }
 
-    public String getPassengerGender() {
-        return _passengergender;
+    public String getDriverGender() {
+        return _drivergender;
     }
 
-    public String getPassengerEmail() {
-        return _passengeremail;
+    public String getDriverEmail() {
+        return _driveremail;
     }
 
     public Date getCreationDate() {
@@ -64,24 +63,24 @@ public class RideLine {
         return _destinationAddress;
     }
 
-    public void setPassengerUsername(String _passengerusername) {
-        this._passengerusername = _passengerusername;
+    public void setDriverUsername(String _driverusername) {
+        this._driverusername = _driverusername;
     }
 
-    public void setPassengerFirstname(String _passengerfirstname) {
-        this._passengerfirstname = _passengerfirstname;
+    public void setDriverFirstname(String _driverfirstname) {
+        this._driverfirstname = _driverfirstname;
     }
 
-    public void setPassengerLastname(String _passengerlastname) {
-        this._passengerlastname = _passengerlastname;
+    public void setDriverLastname(String _driverlastname) {
+        this._driverlastname = _driverlastname;
     }
 
-    public void setPassengerGender(String _passengergender) {
-        this._passengergender = _passengergender;
+    public void setDriverGender(String _drivergender) {
+        this._drivergender = _drivergender;
     }
 
-    public void setPassengerEmail(String _passengeremail) {
-        this._passengeremail = _passengeremail;
+    public void setDriverEmail(String _driveremail) {
+        this._driveremail = _driveremail;
     }
 
     public void setCreationDate(Date _creationDate) {
