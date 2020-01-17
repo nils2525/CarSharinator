@@ -1,10 +1,14 @@
 package com.carsharinator.app.models.users;
 
-import javax.persistence.Entity;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class User {
+    @Id
+    @GeneratedValue
     private int _id;
     // unique
     private String _username;
