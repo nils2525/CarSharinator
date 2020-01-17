@@ -7,90 +7,106 @@ import javax.persistence.Id;
 
 @Entity
 public class RideHeader {
+
     @Id
     @GeneratedValue
     private int _number;
     // unique
-    private int _userID;
-    
-    private String _username;
-    private String _firstname;
-    private String _lastname;
-    private String _password;
-    private String _gender;
-    private String _email;
-    private Boolean _isActive;
+    private int _driverID;
+
+    private String _driverusername;
+    private String _driverfirstname;
+    private String _driverlastname;
+    private String _drivergender;
+    private String _driveremail;
     private Date _creationDate;
+    private Time _startTime;
+    private Time _endTime;
+    private String _startAddress;
+    private String _destinationAddress;
 
     public int getId() {
-        return _userID;
+        return _driverID;
     }
 
-    public String getUsername() {
-        return _username;
+    public String getdrivername() {
+        return _driverusername;
     }
 
-    public String getFirstname() {
-        return _firstname;
+    public String getdriverFirstname() {
+        return _driverfirstname;
     }
 
-    public String getLastname() {
-        return _lastname;
+    public String getdriverLastname() {
+        return _driverlastname;
     }
 
-    public String getPassword() {
-        return _password;
+    public String getDriverGender() {
+        return _drivergender;
     }
 
-    public String getGender() {
-        return _gender;
-    }
-
-    public String getEmail() {
-        return _email;
-    }
-
-    public boolean isIsActive() {
-        return _isActive;
+    public String getDriverEmail() {
+        return _driveremail;
     }
 
     public Date getCreationDate() {
         return _creationDate;
     }
 
-    public void setUsername(String _username) {
-        this._username = _username;
+    public Time getstartTime() {
+        return _startTime;
     }
 
-    public void setFirstname(String _firstname) {
-        this._firstname = _firstname;
+    public Time getendTime() {
+        return _endTime;
+    }
+    
+    public String getStartAddress(){
+        return _startAddress;
+    }
+    
+    public String getDestinationAddress(){
+        return _destinationAddress;
     }
 
-    public void setLastname(String _lastname) {
-        this._lastname = _lastname;
+    public void setDriverUsername(String _driverusername) {
+        this._driverusername = _driverusername;
     }
 
-    public void setPassword(String _password) {
-        this._password = _password;
+    public void setDriverFirstname(String _driverfirstname) {
+        this._driverfirstname = _driverfirstname;
     }
 
-    public void setGender(String _gender) {
-        this._gender = _gender;
+    public void setDriverLastname(String _driverlastname) {
+        this._driverlastname = _driverlastname;
     }
 
-    public void setEmail(String _email) {
-        this._email = _email;
+    public void setDriverGender(String _drivergender) {
+        this._drivergender = _drivergender;
     }
 
-    public void setIsActive(boolean _isActive) {
-        this._isActive = _isActive;
+    public void setDriverEmail(String _driveremail) {
+        this._driveremail = _driveremail;
     }
 
     public void setCreationDate(Date _creationDate) {
         this._creationDate = _creationDate;
     }
     
+    public void SetStartTime(Time _startTime){
+        this._startTime = _startTime;
+    }
     
+    public void SetEndTime(Time _endTime){
+        this._endTime = endTime;
+    }
     
-        
+    public void SetStartAddress(String _startAddress){
+        this._startAddress = _startAddress;
+    }
+    
+    public void  SetDestinationAddress(String _destinationAddress){
+        this._destinationAddress = _destinationAddress;
+    }
+
 }
