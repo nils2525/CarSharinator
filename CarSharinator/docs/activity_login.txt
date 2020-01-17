@@ -1,0 +1,26 @@
+@startuml
+
+title Carsharinator
+
+start
+repeat
+:Daten eingeben ;
+fork
+:Password Hash ;
+fork again
+if (User existiert) then (true)
+:Get Password Hash ;
+else (false)
+:Daten eingeben ;
+stop
+endif
+end fork
+repeat while (Hashes gleich) is (false)
+fork
+:Show Mask ;
+stop
+fork again
+:Log Eintrag ;
+stop
+end fork
+@enduml

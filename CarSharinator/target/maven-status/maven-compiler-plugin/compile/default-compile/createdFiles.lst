@@ -1,0 +1,5 @@
+com\carsharinator\app\models\users\Gender.class
+com\carsharinator\app\repositories\IUserRepository.class
+com\carsharinator\app\models\users\User.class
+com\carsharinator\app\CarSharinatorApplication.class
+com\carsharinator\app\models\rides\RideHeader.class
