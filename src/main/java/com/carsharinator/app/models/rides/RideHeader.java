@@ -2,89 +2,106 @@ package com.carsharinator.app.models.rides;
 
 import java.util.Date;
 
-public class RideHeader {
-    private int _number;
+public class RideLine {
+
+    private int _rideNumber;
+    private int _lineNo;
     // unique
-    private int _userID;
-    
-    private String _username;
-    private String _firstname;
-    private String _lastname;
-    private String _password;
-    private String _gender;
-    private String _email;
-    private Boolean _isActive;
+    private int _passengerID;
+
+    private String _passengerusername;
+    private String _passengerfirstname;
+    private String _passengerlastname;
+    private String _passengergender;
+    private String _passengeremail;
     private Date _creationDate;
+    private Time _startTime;
+    private Time _endTime;
+    private String _startAddress;
+    private String _destinationAddress;
 
     public int getId() {
-        return _userID;
+        return _passengerID;
     }
 
-    public String getUsername() {
-        return _username;
+    public String getpassengername() {
+        return _passengerusername;
     }
 
-    public String getFirstname() {
-        return _firstname;
+    public String getpassengerFirstname() {
+        return _passengerfirstname;
     }
 
-    public String getLastname() {
-        return _lastname;
+    public String getpassengerLastname() {
+        return _passengerlastname;
     }
 
-    public String getPassword() {
-        return _password;
+    public String getPassengerGender() {
+        return _passengergender;
     }
 
-    public String getGender() {
-        return _gender;
-    }
-
-    public String getEmail() {
-        return _email;
-    }
-
-    public boolean isIsActive() {
-        return _isActive;
+    public String getPassengerEmail() {
+        return _passengeremail;
     }
 
     public Date getCreationDate() {
         return _creationDate;
     }
 
-    public void setUsername(String _username) {
-        this._username = _username;
+    public Time getstartTime() {
+        return _startTime;
     }
 
-    public void setFirstname(String _firstname) {
-        this._firstname = _firstname;
+    public Time getendTime() {
+        return _endTime;
+    }
+    
+    public String getStartAddress(){
+        return _startAddress;
+    }
+    
+    public String getDestinationAddress(){
+        return _destinationAddress;
     }
 
-    public void setLastname(String _lastname) {
-        this._lastname = _lastname;
+    public void setPassengerUsername(String _passengerusername) {
+        this._passengerusername = _passengerusername;
     }
 
-    public void setPassword(String _password) {
-        this._password = _password;
+    public void setPassengerFirstname(String _passengerfirstname) {
+        this._passengerfirstname = _passengerfirstname;
     }
 
-    public void setGender(String _gender) {
-        this._gender = _gender;
+    public void setPassengerLastname(String _passengerlastname) {
+        this._passengerlastname = _passengerlastname;
     }
 
-    public void setEmail(String _email) {
-        this._email = _email;
+    public void setPassengerGender(String _passengergender) {
+        this._passengergender = _passengergender;
     }
 
-    public void setIsActive(boolean _isActive) {
-        this._isActive = _isActive;
+    public void setPassengerEmail(String _passengeremail) {
+        this._passengeremail = _passengeremail;
     }
 
     public void setCreationDate(Date _creationDate) {
         this._creationDate = _creationDate;
     }
     
+    public void SetStartTime(Time _startTime){
+        this._startTime = _startTime;
+    }
     
+    public void SetEndTime(Time _endTime){
+        this._endTime = endTime;
+    }
     
-        
+    public void SetStartAddress(String _startAddress){
+        this._startAddress = _startAddress;
+    }
+    
+    public void  SetDestinationAddress(String _destinationAddress){
+        this._destinationAddress = _destinationAddress;
+    }
+
 }
